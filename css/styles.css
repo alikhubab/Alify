@@ -539,3 +539,36 @@ a {
     }
 
 }
+
+/* Collapsible */
+.collapsible__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapsible__heading {
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.collapsible__chevron {
+    transform: rotate(90deg);
+    transition: transform 0.3s;
+}
+
+.collapsible--content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height, opacity 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+    transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible--content {
+    display: block;
+    max-height: 100vh;
+    opacity: 1;
+}
