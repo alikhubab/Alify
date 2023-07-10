@@ -13,31 +13,43 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-<div style=" padding: 4rem">
-    <section class="block container">
-        <div class="block__header">
-            <h2 class="block__heading">Heading</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolorum explicabo incidunt mollitia
-                odio
-                officia omnis sint temporibus vitae voluptatum.</p>
+<div class="card testimonial">
+    <div class="grid grid--1x2">
+        <div class="testimonial--image">
+            <img alt="A happy smiling customer." src="images/testimonial.jpg">
+            <span class="icon-container icon-container--accent">
+                    <svg class="icon icon--primary icon--white icon--small">
+                        <use href="images/sprite.svg#quotes"/>
+                    </svg>
+                </span>
         </div>
-    </section>
+        <blockquote class="quote">
+            <p class="quote__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aperiam
+                architecto
+                aut delectus
+                dolores error illum incidunt iure minima minus porro praesentium quae sequi unde, ut voluptatum. Ex,
+                velit.</p>
+            <footer>
+                <div class="media">
+                    <div class="media__image">
+                        <svg class="icon icon--primary quote__line">
+                            <use href="images/sprite.svg#line"/>
+                        </svg>
+                    </div>
+                    <div class="media__body">
+                        <h3 class="media__title quote__author">John Smith</h3>
+                        <p class="quote__company">ABC Company
+                        </p>
+                    </div>
+                </div>
+
+            </footer>
+        </blockquote>
+
+    </div>
 </div>
 
-<div style=" padding: 4rem">
-    <section class="block  block--dark block--skewed-left">
-        <div class="container">
 
-            <div class="block__header">
-                <h2 class="block__heading">Heading</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolorum explicabo incidunt
-                    mollitia
-                    odio
-                    officia omnis sint temporibus vitae voluptatum.</p>
-            </div>
-        </div>
-    </section>
-</div>
 <script src="js/main.js"></script>
 </body>
 </html>
